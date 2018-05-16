@@ -1,0 +1,97 @@
+\section{Medidas Estatísticas}
+
+\begin{itemize}
+	\item \textbf{Medidas de Posição}:
+		\begin{itemize}
+			\item \textbf{Medidas de tendências centrais}
+			\item \textbf{Medidas separatrizes}
+		\end{itemize}
+	\item \textbf{Medidas de Dispersão}
+\end{itemize}
+
+\subsection{Medidas de tendência central}
+
+\begin{itemize}
+	\item \textbf{Média amostral}: $\bar{x} = \dfrac{1}{n} \cdot \sum_{i=1}^{n}x_i$
+	
+		\textbf{n = tamanho da amostra}\\
+		\textbf{i = i-ésimo elemento}
+		
+	\item \textbf{Média populacional}: $\bar{x} = \dfrac{1}{N} \cdot \sum_{i=1}^{N}x_i$
+	
+		\textbf{N = tamanho da população}\\
+		\textbf{i = i-ésimo elemento}
+	\item \textbf{Moda}: é por definição o elemento mais frequente da distribuição estatística;
+	
+	\item \textbf{Mediana}: também chamada de segundo quartil($Q_2=Md$), coresponde ao valor $x_i$ que divide o \textbf{rol} ao meio:
+	\begin{enumerate}[i]
+		\item Se $n=2k+1$(ímpar), então $Md = x_{k+1}$;
+		\item Se $n=2k$(par), então $Md = \dfrac{x_k + x_{k+1}}{2}$.
+	\end{enumerate}
+\end{itemize}
+
+\subsection{Medidas separatrizes}
+
+\begin{itemize}
+	\item $Q_1$ = primeiro quartil ou quartial inferior;
+	\item $Q_2$ = segundo quatil ou mediana;
+	\item $Q_3$ = terceiro quartil ou quartil superior;
+\end{itemize}
+
+\begin{enumerate}[i]
+	\item Posição imediatamente inferior ao i-ésimo quartial
+	
+		\begin{center}
+			$k=\floor*{\dfrac{i\cdot(n+1)}{4}}$
+		\end{center}
+	
+	\item i-ésimo quartil\\
+		$Q_i=x_k+ \left(\dfrac{i\cdot(n+1)}{4}-k\right)\cdot(x_{k+1}-x_k)$
+\end{enumerate}
+
+\subsection{Medidas de dispersão}
+
+\begin{enumerate}[i]
+	\item variância populacional
+	
+	$\sigma^2=\dfrac{1}{N}\sum_{i=1}^{N}(x_i-\bar{x})^2$
+
+	Desenvolvendo o produto notável
+	
+	%Fazer o desenvolvimento
+	
+	\item Desvio padrão populacional
+	
+	$\sigma=
+		\sqrt{\dfrac{1}{N}\left[\sum_{i=1}^{N}x_{i}^{2} - 
+			\dfrac{1}{N}\left(\sum_{i=1}^{N}x_i\right)^2\right]}$
+	
+	\item Variância amostral
+	
+	$S^2= \dfrac{1}{n-1}\sum_{i=1}^{n}(x_i+\bar{x})^2$\\
+	\textbf{n=tamanho da amostra}
+	
+	e desenvolvendo, temos:
+	
+	$S^2=
+	\dfrac{1}{n-1}\left[\sum_{i=1}^{n}x_{i}^{2} - 
+		\dfrac{1}{n}\left(\sum_{i=1}^{n}x_i\right)^2\right]$
+	
+	\item Amplitude total\\
+	$A=L_{max}-L_{min}$
+	
+	\item Amplitude interquartil(IQR)\\
+	$IQR=Q_3-Q_1$
+	
+	\item Desvio quartílico(Amplitude semi-quartílico)\\
+	$Dq=\dfrac{Q_3-Q_1}{2}$
+	
+	\item Desvio absoluto médio\\
+	$DAM=\dfrac{\sum_{i=1}^{k}f_i|x_i-\bar{x}|}{n}$
+	
+	\item Coeficiente de variância(cv) - utilizada para comparar distribuições estatísticas de naturea distintas\\
+	$cv%=\dfrac{S}{\bar{x}}100%$
+	
+	\item Variância Relática(Vr)\\
+	$Vr=(cv)^2$
+\end{enumerate}
